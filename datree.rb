@@ -4,23 +4,23 @@
 class Datree < Formula
   desc ""
   homepage "https://datree.io/"
-  version "1.1.6"
+  version "1.1.10"
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/datreeio/datree/releases/download/1.1.6/datree-cli_1.1.6_Darwin_x86_64.zip"
-    sha256 "477faf3a2690a0ff3dbb598eb9270744a37af9a6c6597d81fbe235bce87af6ec"
+    url "https://github.com/datreeio/datree/releases/download/1.1.10/datree-cli_1.1.10_Darwin_x86_64.zip"
+    sha256 "5f619040ef6435985597547e412892c4c18cf057db03a015b63f2775b1c4a06a"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/datreeio/datree/releases/download/1.1.6/datree-cli_1.1.6_Darwin_arm64.zip"
-    sha256 "a5e76e9ec10b30e5c1bc99c15955b8c6945b26314d5c2825d5cc52f32d02d8ca"
+    url "https://github.com/datreeio/datree/releases/download/1.1.10/datree-cli_1.1.10_Darwin_arm64.zip"
+    sha256 "66f8e52a00079a7b8363f738d3d940065ba2a688d6d7e382cc1fab4afbe86248"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/datreeio/datree/releases/download/1.1.6/datree-cli_1.1.6_Linux_x86_64.zip"
-    sha256 "77d79edf5186ff3a248951105c0f5d0e7164db297d10cb0f89611274aa4311d1"
+    url "https://github.com/datreeio/datree/releases/download/1.1.10/datree-cli_1.1.10_Linux_x86_64.zip"
+    sha256 "408683962bb13dcf68b314e8372f4078a7013d549412db145ef29e72f939fba8"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/datreeio/datree/releases/download/1.1.6/datree-cli_1.1.6_Linux_arm64.zip"
-    sha256 "630cadd30ff6945bcae0fb5ac7fc9d236fb28adb801146b6ecddada9a0e3e052"
+    url "https://github.com/datreeio/datree/releases/download/1.1.10/datree-cli_1.1.10_Linux_arm64.zip"
+    sha256 "db8b3f71b2a6ca5226f8361dc38ca9426589e4b3369492f9ad098c0ecbc05cf3"
   end
 
   def install
@@ -35,7 +35,6 @@ class Datree < Formula
       \033[35m Usage: $ datree test [k8s-file.yaml]
        Using Helm? => https://github.com/datreeio/helm-datree
        Using Kustomize? => https://hub.datree.io/kustomize-support
-      tput init
     EOS
   end
 end
