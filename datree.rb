@@ -4,23 +4,23 @@
 class Datree < Formula
   desc ""
   homepage "https://datree.io/"
-  version "1.5.29"
+  version "1.5.30"
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/datreeio/datree/releases/download/1.5.29/datree-cli_1.5.29_Darwin_x86_64.zip"
-    sha256 "b878314e9661bed8f3376345bd80271186c9a6e1bc53217bb1ebd41d85160153"
+    url "https://github.com/datreeio/datree/releases/download/1.5.30/datree-cli_1.5.30_Darwin_x86_64.zip"
+    sha256 "9f29bc4b4d3c207e9158748ad329db3d61e3edc05353b8b74f0be8b21697a5bf"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/datreeio/datree/releases/download/1.5.29/datree-cli_1.5.29_Darwin_arm64.zip"
-    sha256 "1658e8b7796364d3ca744e0c1097538cd0f75dfcad42f1b8d8f41833201a66b8"
+    url "https://github.com/datreeio/datree/releases/download/1.5.30/datree-cli_1.5.30_Darwin_arm64.zip"
+    sha256 "e31d9f87b07e9859bdbe826ded0b2775687e5d220983f11032680288e439d096"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/datreeio/datree/releases/download/1.5.29/datree-cli_1.5.29_Linux_x86_64.zip"
-    sha256 "fcd0d301dd63e60a5fa5f22cf03fc93d24e438b5fd50f298d83756c00f230e51"
+    url "https://github.com/datreeio/datree/releases/download/1.5.30/datree-cli_1.5.30_Linux_x86_64.zip"
+    sha256 "70ea2dac45609cfc0ee63f40de6c076a55f334f1dd6b6412071635fb1b0c46e2"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/datreeio/datree/releases/download/1.5.29/datree-cli_1.5.29_Linux_arm64.zip"
-    sha256 "417025e693586d17d42e42753434ff74a11bfc4f860acac003d5a157955dc0a5"
+    url "https://github.com/datreeio/datree/releases/download/1.5.30/datree-cli_1.5.30_Linux_arm64.zip"
+    sha256 "716ed89e5288a05b9d8fd7927afe33f6873f607ca71e062b5e6254e47206eb32"
   end
 
   def install
