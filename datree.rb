@@ -4,22 +4,22 @@
 class Datree < Formula
   desc ""
   homepage "https://datree.io/"
-  version "1.6.40"
+  version "1.6.42"
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/datreeio/datree/releases/download/1.6.40/datree-cli_1.6.40_Darwin_x86_64.zip"
+    url "https://github.com/datreeio/datree/releases/download/1.6.42/datree-cli_1.6.42_Darwin_x86_64.zip"
     sha256 ""
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/datreeio/datree/releases/download/1.6.40/datree-cli_1.6.40_Darwin_arm64.zip"
+    url "https://github.com/datreeio/datree/releases/download/1.6.42/datree-cli_1.6.42_Darwin_arm64.zip"
     sha256 ""
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/datreeio/datree/releases/download/1.6.40/datree-cli_1.6.40_Linux_x86_64.zip"
+    url "https://github.com/datreeio/datree/releases/download/1.6.42/datree-cli_1.6.42_Linux_x86_64.zip"
     sha256 ""
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/datreeio/datree/releases/download/1.6.40/datree-cli_1.6.40_Linux_arm64.zip"
+    url "https://github.com/datreeio/datree/releases/download/1.6.42/datree-cli_1.6.42_Linux_arm64.zip"
     sha256 ""
   end
 
